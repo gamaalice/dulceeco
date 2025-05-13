@@ -17,5 +17,5 @@ This repository contains a **prototype** for a fictional pastry brand website, *
 - **DOM Events & LocalStorage:** For interactivity
 
 ## 🌐 How to Access
-[Insert your link here]
+[Click here](https://gamaalice.github.io/dulceeco/)]
 
