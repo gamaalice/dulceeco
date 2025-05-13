@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulce & Co. | Doceria Moderna</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg width="120" height="50" viewBox="0 0 120 50">
+                    <path d="M20,10 Q25,5 30,10 T40,10 T50,10 T60,10" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+                    <text x="15" y="30" font-family="Playfair Display" font-size="18" font-weight="bold" fill="#333">Dulce & Co.</text>
+                </svg>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#doces">Nossos Doces</a></li>
+                <li><a href="#especiais">Especiais</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Doces que encantam todos os sentidos</h1>
+            <p>Sabores artesanais com um toque de modernidade</p>
+            <a href="#doces" class="btn">Conheça nossos doces</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre a Dulce & Co.</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Fundada em 2023, a Dulce & Co. nasceu da paixão por criar experiências doces inesquecíveis. Nossa missão é unir sabores tradicionais com apresentações modernas e surpreendentes.</p>
+                    <p>Cada doce é preparado com ingredientes selecionados e técnicas que preservam o sabor autêntico, mas com uma apresentação que encanta os olhos antes mesmo do primeiro mordida.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/CAPA.jpg" alt="Nossa doceria">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="doces" class="products">
+        <div class="container">
+            <h2>Nossos Doces</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="tradicionais">Tradicionais</button>
+                <button class="filter-btn" data-filter="gourmet">Gourmet</button>
+                <button class="filter-btn" data-filter="sazonais">Sazonais</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="tradicionais">
+                    <div class="product-image">
+                        <img src="assets/brigadeiro gourmet.jpg" alt="Brigadeiro Gourmet">
+                    </div>
+                    <h3>Brigadeiro Gourmet</h3>
+                    <p>Chocolate belga com raspas de cacau 70%</p>
+                </div>
+                <div class="product-card" data-category="gourmet">
+                    <div class="product-image">
+                        <img src="assets/Macaron de Framboesa.webp" alt="Macaron de Framboesa">
+                    </div>
+                    <h3>Macaron de Framboesa</h3>
+                    <p>Delicado macaron com recheio de framboesa fresca</p>
+                </div>
+                <div class="product-card" data-category="tradicionais">
+                    <div class="product-image">
+                        <img src="assets/Pudim de Leite.avif" alt="Pudim de Leite">
+                    </div>
+                    <h3>Pudim de Leite</h3>
+                    <p>Receita tradicional com calda caramelizada</p>
+                </div>
+                <div class="product-card" data-category="gourmet">
+                    <div class="product-image">
+                        <img src="assets/cheesecake-with-berries.avif" alt="Cheesecake de Frutas Vermelhas">
+                    </div>
+                    <h3>Cheesecake de Frutas Vermelhas</h3>
+                    <p>Base crocante com cobertura de frutas frescas</p>
+                </div>
+                <div class="product-card" data-category="sazonais">
+                    <div class="product-image">
+                        <img src="assets/Torta de limao.jpeg" alt="Torta de Limão">
+                    </div>
+                    <h3>Torta de Limão</h3>
+                    <p>Massa amanteigada com recheio cítrico e merengue</p>
+                </div>
+                <div class="product-card" data-category="sazonais">
+                    <div class="product-image">
+                        <img src="assets/Éclair de Chocolate.jpeg" alt="Éclair de Chocolate">
+                    </div>
+                    <h3>Éclair de Chocolate</h3>
+                    <p>Massa choux com creme de chocolate e cobertura brilhante</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especiais" class="featured">
+        <div class="container">
+            <h2>Especiais da Semana</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="assets/doces sortidos.webp" alt="Especial 1">
+                        <div class="carousel-caption">
+                            <h3>Caixa Degustação</h3>
+                            <p>6 mini doces sortidos por R$35,00</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/pudim familia.avif" alt="Especial 2">
+                        <div class="carousel-caption">
+                            <h3>Pudim Família</h3>
+                            <p>Tamanho grande para 8 pessoas por R$45,00</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/cheesecake premium.jpg" alt="Especial 3">
+                        <div class="carousel-caption">
+                            <h3>Cheesecake Premium</h3>
+                            <p>Com calda especial de frutas vermelhas por R$55,00</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn next">&#10095;</button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Os doces da Dulce & Co. são simplesmente divinos! Cada mordida é uma explosão de sabores."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Maria Silva</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"Encomendei para o aniversário da minha filha e todos ficaram encantados com a apresentação e o sabor!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- João Santos</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        <p>"A melhor doceria da cidade, sem dúvidas! Os macarons são perfeitos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <p>- Ana Oliveira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Endereço</h3>
+                        <p>Rua das Flores, 123 - Centro</p>
+                        <p>São Paulo - SP</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Horário</h3>
+                        <p>Segunda a Sábado: 10h às 19h</p>
+                        <p>Domingo: 12h às 17h</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contato</h3>
+                        <p>Tel: (11) 5555-5555</p>
+                        <p>Email: contato@dulceeco.com.br</p>
+                    </div>
+                </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg width="100" height="40" viewBox="0 0 120 50">
+                        <path d="M20,10 Q25,5 30,10 T40,10 T50,10 T60,10" fill="none" stroke="#FF6B6B" stroke-width="2"/>
+                        <text x="15" y="30" font-family="Playfair Display" font-size="16" font-weight="bold" fill="#fff">Dulce & Co.</text>
+                    </svg>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#doces">Nossos Doces</a></li>
+                        <li><a href="#especiais">Especiais</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Dulce & Co. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
